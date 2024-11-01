@@ -4,10 +4,9 @@ import React from 'react'
 import Image from 'next/image'
 import { Card, Cards } from 'fumadocs-ui/components/card'
 import { GitHub } from 'react-feather'
-import { ReactNode } from 'react'
 
 interface ThemeProps {
-  title: ReactNode
+  title: string
   preview: string
   href: string
   github: string
@@ -51,19 +50,19 @@ const ThemeCard = ({ title, preview, href, github }: ThemeProps) => {
 const ThemeShowcase: React.FC = () => {
   const themes = [
     {
-      title: 'Shiro（@innei）',
+      title: 'Shiro (@innei)',
       preview: '/shiro_preview.png',
       href: '/docs/themes/shiro',
       github: 'https://github.com/innei/shiro'
     },
     {
-      title: 'Kami（@innei）',
+      title: 'Kami (@innei)',
       preview: '/kami_preview.png',
       href: '/docs/themes/kami',
       github: 'https://github.com/innei/kami'
     },
     {
-      title: 'Yun（@innei）',
+      title: 'Yun (@innei)',
       preview: '/yun_preview.png',
       href: '/docs/themes/yun',
       github: 'https://github.com/innei/yun'
