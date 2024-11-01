@@ -2,5 +2,10 @@
     "root": true,
     "title": "部署 Themes",
     "description": "探索部署 MixSpace Themes",
-    "icon": "PaintRoller"
-  }
+    "icon": "PaintRoller",
+    "pages": [
+        "shiro",
+        "kami",
+        "yun"
+    ]
+}

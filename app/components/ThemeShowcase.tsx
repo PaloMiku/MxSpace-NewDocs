@@ -51,21 +51,21 @@ const ThemeShowcase: React.FC = () => {
   const themes = [
     {
       title: 'Shiro (@innei)',
-      preview: '/shiro_preview.png',
-      href: '/docs/themes/shiro',
+      preview: '/assets/images/preview/shiro.png',
+      href: '/docs/themes/shiro/deploy',
       github: 'https://github.com/innei/shiro'
     },
     {
       title: 'Kami (@innei)',
-      preview: '/kami_preview.png',
+      preview: '/assets/images/preview/kami.png',
       href: '/docs/themes/kami',
-      github: 'https://github.com/innei/kami'
+      github: 'https://github.com/mx-space/kami'
     },
     {
       title: 'Yun (@innei)',
-      preview: '/yun_preview.png',
+      preview: '/assets/images/preview/yun.png',
       href: '/docs/themes/yun',
-      github: 'https://github.com/innei/yun'
+      github: 'https://github.com/mx-space/yun'
     }
   ]
 
