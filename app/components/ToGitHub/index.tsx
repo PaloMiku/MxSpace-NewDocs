@@ -1,17 +1,14 @@
-import { UilGithub } from "@components/Icons/GitHub";
-import { Cards, Card } from "nextra/components";
+import { UilGithub } from "app/components/Icons/GitHub";
+import { Card, Cards } from 'fumadocs-ui/components/card';
 
-export function ToGitHub({ repo }) {
+export function ToGitHub({ repo }: { repo: string }) {
   return (
-    <Cards num={1}>
+    <Cards>
       <Card
-        arrow
         href={`https://github.com/${repo}`}
         title={`${repo} - GitHub`}
         icon={<UilGithub />}
-        children
-        // @ts-ignore
-        target="_blank"
+        external
       />
     </Cards>
   );

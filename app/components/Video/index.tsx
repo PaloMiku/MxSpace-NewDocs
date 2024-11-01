@@ -6,9 +6,13 @@ const observerOptions = {
   threshold: 0.5,
 };
 
-export default function Video({ src }) {
-  const videoRef = useRef(null);
-  const observerRef = useRef(null);
+interface VideoProps {
+  src: string;
+}
+
+export default function Video({ src }: VideoProps) {
+  const videoRef = useRef<HTMLVideoElement>(null);
+  const observerRef = useRef<IntersectionObserver | null>(null);
 
   useEffect(() => {
     observerRef.current = new IntersectionObserver(handleIntersection, observerOptions);
@@ -25,12 +29,12 @@ export default function Video({ src }) {
 
   const handleIntersection = (entries: IntersectionObserverEntry[]) => {
     entries.forEach((entry: IntersectionObserverEntry) => {
-      if (entry.isIntersecting) {
+      if (entry.isIntersecting && videoRef.current) {
         if (!videoRef.current.src) {
           videoRef.current.src = src;
         }
         videoRef.current.play();
-      } else {
+      } else if (videoRef.current) {
         videoRef.current.pause();
       }
     });
