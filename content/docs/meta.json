@@ -1,0 +1,16 @@
+{
+  "title": "Framework",
+  "description": "The docs framework",
+  "icon": "Building2",
+  "root": true,
+  "pages": [
+    "---信息---",
+    "index",
+    "features",
+    "---部署---",
+    "dockers",
+    "advanced",
+    "extra",
+    "community"
+  ]
+}
