@@ -79,16 +79,16 @@ export const baseOptions: BaseLayoutProps = {
           icon: <Pencil />,
           text: 'Markdown',
           description: '了解Mix Space的Markdown 扩展语法',
-          url: '/docs/ui/markdown',
+          url: '/docs/markdown',
           menu: {
             className: 'lg:col-start-3 lg:row-start-1',
           },
         },
         {
           icon: <Cpu />,
-          text: '系统开发',
+          text: '开发指南',
           description: '了解如何为Mix Space开发后端和前端',
-          url: '/docs/ui/blocks',
+          url: '/docs/development',
           menu: {
             className: 'lg:col-start-3',
           },
