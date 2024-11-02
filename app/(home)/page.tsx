@@ -106,7 +106,7 @@ function Hero(): React.ReactElement {
       </p>
       <div className="inline-flex items-center gap-3 max-md:mx-auto">
         <Link
-          href="/docs"
+          href="/docs/core"
           className={cn(
             buttonVariants({ size: 'lg', className: 'rounded-full' }),
           )}

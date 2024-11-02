@@ -46,8 +46,7 @@ export const baseOptions: BaseLayoutProps = {
   links: [
     {
       type: 'menu',
-      text: 'Documentation',
-      url: '/docs/core',
+      text: '文档',
       items: [
         {
           icon: <BookMarked />,
@@ -98,20 +97,19 @@ export const baseOptions: BaseLayoutProps = {
     },
     {
       type: 'menu',
-      text: 'More Information',
-      url: '/more',
+      text: '更多',
       items: [
         {
           icon: <AlbumIcon />,
           text: '博客',
           url: '/blog',
-          active: 'nested-url',
+          description: 'Mix Space 团队开发相关博客',
         },
         {
           text: '示例',
           url: '/showcase',
           icon: <LayoutTemplate />,
-          active: 'url',
+          description: '在这里找到更多使用Mix Space的用户',
         },
       ],
     },
