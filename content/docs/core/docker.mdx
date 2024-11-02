@@ -4,8 +4,8 @@ description: 通过 Docker 部署 MiX-Space 后端
 icon: Container
 ---
 
-import { UilExternalLinkAlt } from 'app/components/Icons/ExternalLinkAlt'
-import { UilArrowCircleUp } from 'app/components/Icons/ArrowCircleUp'
+import { ExternalLink } from 'lucide-react'
+import { ArrowUpCircle } from 'lucide-react'
 import { Step, Steps } from 'fumadocs-ui/components/steps';
 import { EnvVariableConfig } from 'app/components/EnvVariableConfig'
 
@@ -133,18 +133,18 @@ docker compose up -d
     arrow="true"
     title="反向代理配置"
     href="/docs/extra#反向代理"
-    icon={<UilExternalLinkAlt />}
+    icon={<ExternalLink />}
   />
   <Card
     arrow="true"
     title="前端主题部署"
     href="/themes"
-    icon={<UilExternalLinkAlt />}
+    icon={<ExternalLink />}
   />
   <Card 
     arrow="true" 
     title="使用指南" 
     href="/usage" 
-    icon={<UilArrowCircleUp />} 
+    icon={<ArrowUpCircle />} 
   />
 </Cards>

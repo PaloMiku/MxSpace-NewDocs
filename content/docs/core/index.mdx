@@ -27,23 +27,19 @@ import { Accordion, Accordions } from 'fumadocs-ui/components/accordion';
 我们提供了两种部署方式，并且社区也提供了更多的部署方式，你可以根据自己的喜好选择一种部署方式。
 </Callout>
 
-import { UimDocker } from 'app/components/Icons/Docker';
-import { UimStar } from 'app/components/Icons/Star';
-import { FluentPeopleCommunity } from 'app/components/Icons/PeopleCommunity';
-import { UilExternalLinkAlt } from 'app/components/Icons/ExternalLinkAlt';
-import { UilPaintTool } from 'app/components/Icons/PaintTool';
+import { Container, Pickaxe, Share2, Ellipsis, Paintbrush } from 'lucide-react';
 
 <Cards>
-  <Card title="Docker 部署" href="/docs/core/docker" icon={<UimDocker />} />
-  <Card title="进阶部署" href="/docs/core/advanced" icon={<UimStar />} />
-  <Card title="社区部署教程" href="/docs/core/community" icon={<FluentPeopleCommunity />} />
-  <Card title="相关内容" href="/docs/core/extra" icon={<UilExternalLinkAlt />} />
+  <Card title="Docker 部署" href="/docs/core/docker" icon={<Container />} />
+  <Card title="进阶部署" href="/docs/core/advanced" icon={<Pickaxe />} />
+  <Card title="拓展内容" href="/docs/core/extra" icon={<Ellipsis />} />
+  <Card title="社区分享" href="/docs/core/community" icon={<Share2 />} />
 </Cards>
 
 还有更多部署方式吗？欢迎您向文档提交 [Pull Request](https://github.com/mx-space/docs/pulls) 以分享您的部署方式。按上方**后端部署文档**完成你的部署后，你可以通过下面的方式继续部署 Mix Space **前端** *（为什么分开部署？请查看 [一些你需要知道的事情](#一些你需要知道的事情)）*
 
 <Cards>
-  <Card title="浏览前端主题" href="/themes" icon={<UilPaintTool />} />
+  <Card title="浏览前端主题" href="/themes" icon={<Paintbrush />} />
 </Cards>
 
 ## 一些你需要知道的事情

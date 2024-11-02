@@ -1,6 +1,6 @@
 "use client";
 
-import { UilGithub } from "app/components/Icons/GitHub";
+import { Github } from 'lucide-react';
 import { Card, Cards } from 'fumadocs-ui/components/card';
 
 export function ToGitHub({ repo }: { repo: string }) {
@@ -10,7 +10,7 @@ export function ToGitHub({ repo }: { repo: string }) {
         className="m-2"
         href={`https://github.com/${repo}`}
         title={`${repo} - GitHub`}
-        icon={<UilGithub />}
+        icon={<Github />}
         external
       />
     </Cards>
