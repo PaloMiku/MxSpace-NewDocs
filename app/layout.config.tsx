@@ -78,7 +78,7 @@ export const baseOptions: BaseLayoutProps = {
         {
           icon: <Pencil />,
           text: 'Markdown',
-          description: '了解Mix Space的Markdown 扩展语法',
+          description: '了解Mix Space的Markdown 语法',
           url: '/docs/markdown',
           menu: {
             className: 'lg:col-start-3 lg:row-start-1',
@@ -92,24 +92,6 @@ export const baseOptions: BaseLayoutProps = {
           menu: {
             className: 'lg:col-start-3',
           },
-        },
-      ],
-    },
-    {
-      type: 'menu',
-      text: '更多',
-      items: [
-        {
-          icon: <AlbumIcon />,
-          text: '博客',
-          url: '/blog',
-          description: 'Mix Space 团队开发相关博客',
-        },
-        {
-          text: '示例',
-          url: '/showcase',
-          icon: <LayoutTemplate />,
-          description: '在这里找到更多使用Mix Space的用户',
         },
       ],
     },

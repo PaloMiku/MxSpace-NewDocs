@@ -9,6 +9,8 @@
     "postinstall": "fumadocs-mdx"
   },
   "dependencies": {
+    "@orama/orama": "^3.0.1",
+    "@orama/tokenizers": "^3.0.1",
     "copy-to-clipboard": "^3.3.3",
     "framer-motion": "^11.11.11",
     "fumadocs-core": "14.2.0",
