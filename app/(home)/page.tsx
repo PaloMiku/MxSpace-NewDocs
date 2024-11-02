@@ -42,17 +42,29 @@ export default function Page(): React.ReactElement {
           </div>
           <Feedback />
           <div
-            className="container relative overflow-hidden border-x border-t py-4 sm:py-8"
+            className="container relative overflow-hidden border-x border-t py-4 sm:py-8 mt-[-1px]"
             style={{
-              backgroundImage:
-                'radial-gradient(circle at bottom center, hsl(var(--secondary)), hsl(var(--background)))',
+              background: [
+                'radial-gradient(circle at bottom center, hsl(var(--secondary)), transparent 70%)',
+                'linear-gradient(90deg, rgba(78, 191, 255, 0.1), transparent 30%, rgba(233, 42, 103, 0.1))',
+              ].join(', '),
+              borderTopStyle: 'dashed',
             }}
           >
-            <h2 className="bg-gradient-to-b from-fd-primary to-fd-foreground/40 bg-clip-text text-center text-2xl font-semibold text-transparent sm:text-3xl">
-              Loved by users.
-              <br />
-              Built for developers.
-            </h2>
+            <div className="relative z-[1]">
+              <h2 className="bg-gradient-to-b from-fd-primary to-fd-foreground/40 bg-clip-text text-center text-2xl font-semibold text-transparent sm:text-3xl">
+                Loved by users.
+                <br />
+                Built for developers.
+              </h2>
+            </div>
+            <div
+              className="absolute inset-0 z-0"
+              style={{
+                background: 'linear-gradient(to bottom, transparent, rgba(var(--secondary), 0.2))',
+                opacity: 0.5,
+              }}
+            />
           </div>
           <div className="grid grid-cols-1 border-r md:grid-cols-2 lg:grid-cols-3">
             <Highlight icon={RocketIcon} heading="基于Next.js">
@@ -139,14 +151,6 @@ function Hero(): React.ReactElement {
 function Feedback(): React.ReactElement {
   return (
     <div className="relative flex flex-col items-center overflow-hidden border-x border-t px-6 pb-8 pt-8 md:pb-8">
-      <div
-        className="absolute inset-x-0 bottom-0 z-[-1] h-24 opacity-30 duration-1000 animate-in fade-in"
-        style={{
-          maskImage: 'linear-gradient(to bottom,transparent,white)',
-          backgroundImage:
-            'linear-gradient(to right, #4ebfff, transparent, #e92a67)',
-        }}
-      />
       <div className="rounded-xl border bg-gradient-to-b from-secondary p-4 shadow-lg">
         <p className="text-sm font-medium">
           {`"Mix Space，是一个小型的个人空间站。继承了传统的博客，有着不同于博客的丰富的内容。适合那些喜欢写不同风格或类型的写作爱好者。"`}
@@ -304,7 +308,7 @@ function Contributing(): React.ReactElement {
           href="https://github.com/mx-space"
           className={cn(buttonVariants({ variant: 'outline' }))}
         >
-          前往 Github 开源社区
+          加入开源社区
         </Link>
       </div>
       <ContributorCounter repoOwner="mx-space" repoName="docs" />
