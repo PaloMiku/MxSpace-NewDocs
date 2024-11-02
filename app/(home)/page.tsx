@@ -12,6 +12,8 @@ import {
   LayoutIcon,
   KeyboardIcon,
   PencilLine,
+  CirclePlay,
+  Github,
   PersonStandingIcon 
 } from 'lucide-react';
 import { ReactNode } from 'react';
@@ -111,7 +113,7 @@ function Hero(): React.ReactElement {
             buttonVariants({ size: 'lg', className: 'rounded-full' }),
           )}
         >
-          开始使用
+          <CirclePlay className="size-4 mr-2" /> 开始使用
         </Link>
         <a
           href="https://github.com/mx-space"
@@ -119,11 +121,11 @@ function Hero(): React.ReactElement {
             buttonVariants({
               size: 'lg',
               variant: 'outline',
-              className: 'rounded-full bg-fd-background',
+              className: 'rounded-full bg-fd-background flex items-center',
             }),
           )}
         >
-          前往 Github
+          <Github className="size-4 mr-2" /> Github
         </a>
       </div>
       <Image
