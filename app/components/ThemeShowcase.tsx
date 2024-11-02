@@ -65,7 +65,7 @@ const ThemeShowcase: React.FC = () => {
       title: 'Yun (@innei)',
       preview: '/assets/images/preview/yun.png',
       href: '/docs/themes/yun',
-      github: 'https://github.com/mx-space/yun'
+      github: 'https://github.com/mx-space/mx-web-yun'
     }
   ]
 
