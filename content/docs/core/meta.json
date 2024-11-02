@@ -1,7 +1,7 @@
 {
   "title": "部署 Core",
   "description": "探索部署 MixSpace Core",
-  "icon": "Cpu",
+  "icon": "Server",
   "root": true,
   "pages": [
     "---信息---",

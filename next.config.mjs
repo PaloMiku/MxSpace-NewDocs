@@ -6,7 +6,7 @@ const withMDX = createMDX();
 const config = {
   reactStrictMode: true,
   images: {
-    domains: ['github.com', 'pan.vinua.cn']
+    domains: ['github.com', 'avatars.githubusercontent.com', 'pan.vinua.cn']
   }
 };
 
