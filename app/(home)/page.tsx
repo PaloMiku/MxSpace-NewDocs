@@ -234,20 +234,20 @@ function Feedback(): React.ReactElement {
                 rel="noreferrer noopener"
                 className="text-sm font-medium"
               >
-                Docs Contributor
+                Contributor
               </a>
               <p className="text-xs text-fd-muted-foreground">
-                Mix Space 文档贡献者
+                Mix Space 贡献者
               </p>
             </div>
-            <Link
+            {/* <Link
               href="https://docs.mx-space.com"
               className={cn(
                 buttonVariants({ variant: 'outline', className: 'ml-auto' }),
               )}
             >
               查看文档
-            </Link>
+            </Link> */}
           </div>
         </div>
         <div className="rounded-xl border bg-gradient-to-b from-secondary p-4 shadow-lg flex-1">
@@ -268,20 +268,20 @@ function Feedback(): React.ReactElement {
                 rel="noreferrer noopener"
                 className="text-sm font-medium"
               >
-                Docs Contributor
+                Contributor
               </a>
               <p className="text-xs text-fd-muted-foreground">
-                Mix Space 文档贡献者
+                Mix Space 贡献者
               </p>
             </div>
-            <Link
+            {/* <Link
               href="https://docs.mx-space.com"
               className={cn(
                 buttonVariants({ variant: 'outline', className: 'ml-auto' }),
               )}
             >
               查看文档
-            </Link>
+            </Link> */}
           </div>
         </div>
       </div>
