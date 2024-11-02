@@ -286,7 +286,7 @@ pnpm prod:pm2
 
 和编辑其他环境变量一样，在 `services.app` 的 `environment` 部分添加你需要传入的值，如下所示：
 
-```yml {8-10}
+```yaml 
 services:
   app:
     container_name: mx-server
@@ -310,7 +310,7 @@ services:
 
 和 Redis 一样，我们可以修改 `ecosystem.config.js` 在 12 行，也就是 `script` 这一项，添加你需要传入的值，如下所示：
 
-```diff
+```javascript
 const { cpus } = require('os')
 const { execSync } = require('child_process')
 const nodePath = execSync(`npm root --quiet -g`, { encoding: 'utf-8' }).split(
