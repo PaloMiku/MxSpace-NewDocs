@@ -10,7 +10,6 @@ import {
   RocketIcon,
   TimerIcon,
   LayoutIcon,
-  SearchIcon,
   KeyboardIcon,
   PencilLine,
   PersonStandingIcon 
@@ -102,7 +101,7 @@ function Hero(): React.ReactElement {
         An Alternative Personal Space.
       </h1>
       <p className="mb-8 text-fd-muted-foreground md:max-w-[80%] md:text-xl">
-        Mix Space 是一个小型的个人空间站。继承了传统的博客，有着不同于博客的丰富的内容。
+        Mix Space 是一个小型个人空间站点程序。不同于传统的博客程序，采用前后端分离设计，
         适合那些喜欢写不同风格或类型的写作爱好者。
       </p>
       <div className="inline-flex items-center gap-3 max-md:mx-auto">
@@ -153,7 +152,7 @@ function Feedback(): React.ReactElement {
     <div className="relative flex flex-col items-center overflow-hidden border-x border-t px-6 pb-8 pt-8 md:pb-8">
       <div className="rounded-xl border bg-gradient-to-b from-secondary p-4 shadow-lg">
         <p className="text-sm font-medium">
-          {`"Mix Space，是一个小型的个人空间站。继承了传统的博客，有着不同于博客的丰富的内容。适合那些喜欢写不同风格或类型的写作爱好者。"`}
+          {`"Mix Space，是一个小型的个人空间程序。继承了传统的博客，有着不同于博客的丰富的内容。适合那些喜欢写不同风格或类型的写作爱好者。"`}
         </p>
         <div className="mt-4 flex flex-row items-center gap-2">
           <Image
