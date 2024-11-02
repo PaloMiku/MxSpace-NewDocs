@@ -17,24 +17,19 @@ import Logo from '@/public/assets/images/logo/image.png';
 export const linkItems: LinkItemType[] = [
   {
     icon: <AlbumIcon />,
-    text: 'Blog',
+    text: '博客',
     url: '/blog',
     active: 'nested-url',
   },
   {
-    text: 'Showcase',
+    text: '示例',
     url: '/showcase',
     icon: <LayoutTemplate />,
     active: 'url',
   },
   {
-    text: 'Sponsors',
-    url: '/sponsors',
-    icon: <Heart />,
-  },
-  {
     type: 'icon',
-    url: 'https://github.com/fuma-nama/fumadocs',
+    url: 'https://github.com/mx-space/docs',
     text: 'Github',
     icon: (
       <svg role="img" viewBox="0 0 24 24" fill="currentColor">
