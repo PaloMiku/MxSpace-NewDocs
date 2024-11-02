@@ -1,10 +1,8 @@
 import { type LinkItemType } from 'fumadocs-ui/layouts/docs';
 import {
   AlbumIcon,
-  Book,
   BookMarked,
   PaintRoller,
-  Heart,
   Cpu,
   LayoutTemplate,
   Pencil,
@@ -15,18 +13,6 @@ import type { BaseLayoutProps } from 'fumadocs-ui/layouts/shared';
 import Logo from '@/public/assets/images/logo/image.png';
 
 export const linkItems: LinkItemType[] = [
-  {
-    icon: <AlbumIcon />,
-    text: '博客',
-    url: '/blog',
-    active: 'nested-url',
-  },
-  {
-    text: '示例',
-    url: '/showcase',
-    icon: <LayoutTemplate />,
-    active: 'url',
-  },
   {
     type: 'icon',
     url: 'https://github.com/mx-space/docs',
@@ -60,9 +46,8 @@ export const baseOptions: BaseLayoutProps = {
   links: [
     {
       type: 'menu',
-      text: '使用文档',
-      url: '/docs/ui',
-      icon: <Book />,
+      text: 'Documentation',
+      url: '/docs/core',
       items: [
         {
           icon: <BookMarked />,
@@ -91,7 +76,6 @@ export const baseOptions: BaseLayoutProps = {
             className: 'lg:col-start-2',
           },
         },
-
         {
           icon: <Pencil />,
           text: 'Markdown',
@@ -109,6 +93,25 @@ export const baseOptions: BaseLayoutProps = {
           menu: {
             className: 'lg:col-start-3',
           },
+        },
+      ],
+    },
+    {
+      type: 'menu',
+      text: 'More Information',
+      url: '/more',
+      items: [
+        {
+          icon: <AlbumIcon />,
+          text: '博客',
+          url: '/blog',
+          active: 'nested-url',
+        },
+        {
+          text: '示例',
+          url: '/showcase',
+          icon: <LayoutTemplate />,
+          active: 'url',
         },
       ],
     },
