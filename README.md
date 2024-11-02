@@ -1,26 +1,35 @@
-# src
+# Mix Space Documentation v3
 
-This is a Next.js application generated with
-[Create Fumadocs](https://github.com/fuma-nama/fumadocs).
+## Contributing 贡献
 
-Run development server:
+这个站点使用的是 [Pumadocs](https://fumadocs.vercel.app) 程序。站点内容使用 MDX 编写，文档文件在 `/content/docs` 文件夹中。如果只有一些简单的修改，你可以直接在 GitHub 网页端进行修改并新建一个 Pull Request.
+
+在本地开发中，[bun](https://bun.sh/) 被选用为项目的包管理器，你需要使用 bun 安装依赖：
 
 ```bash
-npm run dev
-# or
-pnpm dev
-# or
-yarn dev
+  bun i
+  bun run dev
+  bun run build
 ```
 
-Open http://localhost:3000 with your browser to see the result.
+## Working on the content 修改文字
 
-## Learn More
+- 关于支持的 MDX 扩展和在 MDX 内部使用 React 语法的能力，请参阅 Pumadocs 文档
+- 有关编写和维护文档内容的规则和建议，请参阅编写指南。
 
-To learn more about Next.js and Fumadocs, take a look at the following
-resources:
+## Guide 编写指南
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js
-  features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-- [Fumadocs](https://fumadocs.vercel.app) - learn about Fumadocs
+<u>**新增一个章节**</u>：
+
+1. 克隆此项目
+2. 在 `content/docs` 文件夹中，新增一个文件夹，请语义化命名，假设为 `test`
+3. 编写内容，具体可以借鉴其他文档文件夹，请务必设置了父文件夹的 `meta.json` 文件，具体请参考 Pumadocs 文档
+4. 创建 Pull Request. 其余审核的事情只需要交给我们来做就好了
+
+**<u>编写内容的时候需要注意的事情</u>**：
+
+1. 中文与英文之间请保留一个空格，如`测试 test 测试`
+
+## Author
+
+Docs © Mix Space Team, Released under MIT. Created on Nov 2, 2024
