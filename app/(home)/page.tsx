@@ -246,7 +246,7 @@ function Feedback(): React.ReactElement {
                 WuHang2003
               </a>
               <p className="text-xs text-fd-muted-foreground">
-                Mix Space Team成员
+                Mix Space Team 成员
               </p>
             </div>
             {/* <Link
